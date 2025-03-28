@@ -1,0 +1,75 @@
+/* Body */
+body {
+  font-family: "Press Start 2P", sans-serif;
+  background-image: url('/assets/background.png'); /* FIXED PATH */
+  background-size: cover;
+  background-position: center;
+  color: rgb(14, 63, 70);
+  text-align: center;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title */
+.title {
+  font-size: 100px;
+}
+
+/* Floating Effect */
+.nanodrop {
+  animation: floatBounce 2.5s ease-in-out infinite;
+}
+
+@keyframes floatBounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/* Flexbox Fix */
+.container-box {
+  display: flex; /* FIXED */
+  flex-direction: row;
+  justify-content: center; /* FIXED */
+  flex-wrap: wrap;
+  gap: 20px; /* Adds spacing */
+  margin-top: 20px;
+}
+
+/* Image Button Wrapper */
+.image-button {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Text Over Image */
+.button-text {
+  position: absolute;
+  top: 41%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: rgba(0, 0, 0, 0.123);
+  padding: 16px 52px;
+  border-radius: 5px;
+}
+
+.button-text:hover {
+  position: absolute;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: rgba(0, 148, 233, 0.137);
+  padding: 16px 52px;
+  border-radius: 5px;
+  cursor: pointer;
+}
