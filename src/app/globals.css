@@ -1,26 +1,22 @@
-/* Body */
 body {
   font-family: "Press Start 2P", sans-serif;
-  background-image: url('/assets/background.png'); /* FIXED PATH */
+  background-image: url('/assets/background.png');
   background-size: cover;
   background-position: center;
   color: rgb(14, 63, 70);
   text-align: center;
 }
 
-/* Container */
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Title */
 .title {
   font-size: 100px;
 }
 
-/* Floating Effect */
 .nanodrop {
   animation: floatBounce 2.5s ease-in-out infinite;
 }
@@ -31,17 +27,15 @@ body {
   100% { transform: translateY(0); }
 }
 
-/* Flexbox Fix */
 .container-box {
-  display: flex; /* FIXED */
+  display: flex; 
   flex-direction: row;
-  justify-content: center; /* FIXED */
+  justify-content: center; 
   flex-wrap: wrap;
-  gap: 20px; /* Adds spacing */
+  gap: 20px; 
   margin-top: 20px;
 }
 
-/* Image Button Wrapper */
 .image-button {
   position: relative;
   display: flex;
@@ -49,7 +43,6 @@ body {
   align-items: center;
 }
 
-/* Text Over Image */
 .button-text {
   position: absolute;
   top: 41%;
@@ -58,7 +51,6 @@ body {
   font-size: 18px;
   font-weight: bold;
   color: white;
-  background: rgba(0, 0, 0, 0.123);
   padding: 16px 52px;
   border-radius: 5px;
 }
@@ -72,4 +64,7 @@ body {
   padding: 16px 52px;
   border-radius: 5px;
   cursor: pointer;
+}
+.intake-text {
+  font-size: 50px;
 }
